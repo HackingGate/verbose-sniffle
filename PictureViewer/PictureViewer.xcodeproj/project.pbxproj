@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C787EDDA2A19EA6A00CF1533 /* FlickerBackend */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FlickerBackend; sourceTree = "<group>"; };
 		C7BAC99C2A18CB5D00F03354 /* PictureViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BAC99F2A18CB5D00F03354 /* PictureViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerApp.swift; sourceTree = "<group>"; };
 		C7BAC9A12A18CB5D00F03354 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		C7BAC9932A18CB5D00F03354 = {
 			isa = PBXGroup;
 			children = (
+				C787EDDA2A19EA6A00CF1533 /* FlickerBackend */,
 				C7BAC99E2A18CB5D00F03354 /* PictureViewer */,
 				C7BAC9AF2A18CB5E00F03354 /* PictureViewerTests */,
 				C7BAC9B92A18CB5E00F03354 /* PictureViewerUITests */,
