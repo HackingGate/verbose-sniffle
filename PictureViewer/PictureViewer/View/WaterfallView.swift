@@ -7,28 +7,27 @@
 
 import SwiftUI
 import FlickerBackend
-import Kingfisher
 
-struct WaterfallView: View {
-    @State var photos: [Photo] = []
+struct WaterfallView<Content: View>: View {
+    var photos: [Photo]
+    var content: (Photo) -> Content
+    
+    init(photos: [Photo], @ViewBuilder content: @escaping (Photo) -> Content) {
+        self.photos = photos
+        self.content = content
+    }
 
     var body: some View {
         ScrollView {
             HStack(alignment: .top, spacing: 10) {
                 VStack(spacing: 10) {
                     ForEach(photos.indices.filter { $0.isMultiple(of: 2) }, id: \.self) { index in
-                        KFImage(URL(string: photos[index].url_m ?? ""))
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(10)
+                        content(photos[index])
                     }
                 }
                 VStack(spacing: 10) {
                     ForEach(photos.indices.filter { !$0.isMultiple(of: 2) }, id: \.self) { index in
-                        KFImage(URL(string: photos[index].url_m ?? ""))
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(10)
+                        content(photos[index])
                     }
                 }
             }.padding()

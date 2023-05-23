@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct SearchView: View {
     @StateObject private var viewModel = SearchViewModel()
@@ -22,7 +23,12 @@ struct SearchView: View {
                 } else if viewModel.flickrPhotosSearchResponse == nil {
                     Text("No data")
                 } else if let flickrPhotosSearchResponse = viewModel.flickrPhotosSearchResponse {
-                    WaterfallView(photos: flickrPhotosSearchResponse.photos.photo)
+                    WaterfallView(photos: flickrPhotosSearchResponse.photos.photo) { photo in
+                        KFImage(URL(string: photo.url_m ?? ""))
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(10)
+                    }
                 } else {
                     Text("Loading...")
                 }
