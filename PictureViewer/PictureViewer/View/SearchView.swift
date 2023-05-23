@@ -13,11 +13,6 @@ struct SearchView: View {
     @State private var searchText: String = ""
     
     @Environment(\.dismissSearch) var dismissSearch
-    
-    let suggestions: [String] = [
-        "Tokyo Night Views", "New York City", "Paris"
-    ]
-
 
     var body: some View {
         NavigationView  {
@@ -33,15 +28,11 @@ struct SearchView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .searchable(text: $searchText, prompt: "Search text here...") {
-                ForEach(suggestions, id: \.self) { suggestion in
-                    Text(suggestion)
-                        .searchCompletion(suggestion)
-                }
-            }
+            .searchable(text: $searchText, prompt: "Search text here...")
             .onSubmit(of: .search) {
                 Task {
                     await viewModel.flickrPhotosSearch(text: searchText)
+                    dismissSearch()
                 }
             }
         }
