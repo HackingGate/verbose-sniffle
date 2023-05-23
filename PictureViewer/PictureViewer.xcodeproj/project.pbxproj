@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C72F5EFD2A1D59E700089CAA /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72F5EFC2A1D59E700089CAA /* SearchViewModel.swift */; };
 		C75E8F132A1D5E3700C20EA1 /* FlickerBackend in Frameworks */ = {isa = PBXBuildFile; productRef = C75E8F122A1D5E3700C20EA1 /* FlickerBackend */; };
+		C75E8F152A1D692A00C20EA1 /* WaterfallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75E8F142A1D692A00C20EA1 /* WaterfallView.swift */; };
+		C75E8F182A1D6D4200C20EA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C75E8F172A1D6D4200C20EA1 /* Kingfisher */; };
 		C7BAC9A02A18CB5D00F03354 /* PictureViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAC99F2A18CB5D00F03354 /* PictureViewerApp.swift */; };
 		C7BAC9A22A18CB5D00F03354 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAC9A12A18CB5D00F03354 /* SearchView.swift */; };
 		C7BAC9A42A18CB5E00F03354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BAC9A32A18CB5E00F03354 /* Assets.xcassets */; };
@@ -37,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		C72F5EFC2A1D59E700089CAA /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		C75E8F142A1D692A00C20EA1 /* WaterfallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallView.swift; sourceTree = "<group>"; };
 		C787EDDA2A19EA6A00CF1533 /* FlickerBackend */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FlickerBackend; sourceTree = "<group>"; };
 		C7BAC99C2A18CB5D00F03354 /* PictureViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BAC99F2A18CB5D00F03354 /* PictureViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerApp.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75E8F182A1D6D4200C20EA1 /* Kingfisher in Frameworks */,
 				C75E8F132A1D5E3700C20EA1 /* FlickerBackend in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C7BAC9A12A18CB5D00F03354 /* SearchView.swift */,
+				C75E8F142A1D692A00C20EA1 /* WaterfallView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			name = PictureViewer;
 			packageProductDependencies = (
 				C75E8F122A1D5E3700C20EA1 /* FlickerBackend */,
+				C75E8F172A1D6D4200C20EA1 /* Kingfisher */,
 			);
 			productName = PictureViewer;
 			productReference = C7BAC99C2A18CB5D00F03354 /* PictureViewer.app */;
@@ -257,6 +263,9 @@
 				Base,
 			);
 			mainGroup = C7BAC9932A18CB5D00F03354;
+			packageReferences = (
+				C75E8F162A1D6D4200C20EA1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C7BAC99D2A18CB5D00F03354 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,6 +311,7 @@
 				C72F5EFD2A1D59E700089CAA /* SearchViewModel.swift in Sources */,
 				C7BAC9A22A18CB5D00F03354 /* SearchView.swift in Sources */,
 				C7BAC9A02A18CB5D00F03354 /* PictureViewerApp.swift in Sources */,
+				C75E8F152A1D692A00C20EA1 /* WaterfallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,10 +631,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		C75E8F162A1D6D4200C20EA1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		C75E8F122A1D5E3700C20EA1 /* FlickerBackend */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FlickerBackend;
+		};
+		C75E8F172A1D6D4200C20EA1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C75E8F162A1D6D4200C20EA1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

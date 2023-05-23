@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SearchView.swift
 //  PictureViewer
 //
 //  Created by H G on 2023/05/20.
@@ -21,9 +21,18 @@ struct SearchView: View {
 
     var body: some View {
         NavigationView  {
-            List(viewModel.flickrPhotosSearchResponse?.photos.photo ?? []) { photo in
-                Text(photo.title)
+            VStack {
+                if let error = viewModel.error {
+                    Text(error.localizedDescription)
+                } else if viewModel.flickrPhotosSearchResponse == nil {
+                    Text("No data")
+                } else if let flickrPhotosSearchResponse = viewModel.flickrPhotosSearchResponse {
+                    WaterfallView(photos: flickrPhotosSearchResponse.photos.photo)
+                } else {
+                    Text("Loading...")
+                }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .searchable(text: $searchText, prompt: "Search text here...") {
                 ForEach(suggestions, id: \.self) { suggestion in
                     Text(suggestion)
@@ -34,7 +43,6 @@ struct SearchView: View {
                 Task {
                     await viewModel.flickrPhotosSearch(text: searchText)
                 }
-                dismissSearch()
             }
         }
     }
