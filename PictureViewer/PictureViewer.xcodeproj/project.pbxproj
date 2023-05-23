@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72F5EFD2A1D59E700089CAA /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72F5EFC2A1D59E700089CAA /* SearchViewModel.swift */; };
+		C75E8F132A1D5E3700C20EA1 /* FlickerBackend in Frameworks */ = {isa = PBXBuildFile; productRef = C75E8F122A1D5E3700C20EA1 /* FlickerBackend */; };
 		C7BAC9A02A18CB5D00F03354 /* PictureViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAC99F2A18CB5D00F03354 /* PictureViewerApp.swift */; };
 		C7BAC9A22A18CB5D00F03354 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAC9A12A18CB5D00F03354 /* ContentView.swift */; };
 		C7BAC9A42A18CB5E00F03354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BAC9A32A18CB5E00F03354 /* Assets.xcassets */; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75E8F132A1D5E3700C20EA1 /* FlickerBackend in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C72F5EF92A1D59B700089CAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7BAC9A12A18CB5D00F03354 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C72F5EFA2A1D59BC00089CAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C72F5EFC2A1D59E700089CAA /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C72F5EFB2A1D59C200089CAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C75E8F112A1D5E3300C20EA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7BAC9932A18CB5D00F03354 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +113,7 @@
 				C7BAC9AF2A18CB5E00F03354 /* PictureViewerTests */,
 				C7BAC9B92A18CB5E00F03354 /* PictureViewerUITests */,
 				C7BAC99D2A18CB5D00F03354 /* Products */,
+				C75E8F112A1D5E3300C20EA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +179,9 @@
 			dependencies = (
 			);
 			name = PictureViewer;
+			packageProductDependencies = (
+				C75E8F122A1D5E3700C20EA1 /* FlickerBackend */,
+			);
 			productName = PictureViewer;
 			productReference = C7BAC99C2A18CB5D00F03354 /* PictureViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -579,6 +616,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C75E8F122A1D5E3700C20EA1 /* FlickerBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FlickerBackend;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7BAC9942A18CB5D00F03354 /* Project object */;
 }
