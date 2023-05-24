@@ -3,7 +3,7 @@ iOS Test
 
 ## Overall design
 
-The app uses recent Swift/SwiftUI, with MVVM pattern and 
+The code uses recent Swift/SwiftUI, with MVVM pattern and seperate FickrBackend in SPM.
 
 ## Prerequisites
 
