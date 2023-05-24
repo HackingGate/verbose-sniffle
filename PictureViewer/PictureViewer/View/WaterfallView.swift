@@ -9,10 +9,10 @@ import SwiftUI
 import FlickerBackend
 
 struct WaterfallView<Content: View>: View {
-    var photos: [Photo]
-    var content: (Photo) -> Content
+    var photos: [PersistedPhoto]
+    var content: (PersistedPhoto) -> Content
     
-    init(photos: [Photo], @ViewBuilder content: @escaping (Photo) -> Content) {
+    init(photos: [PersistedPhoto], @ViewBuilder content: @escaping (PersistedPhoto) -> Content) {
         self.photos = photos
         self.content = content
     }

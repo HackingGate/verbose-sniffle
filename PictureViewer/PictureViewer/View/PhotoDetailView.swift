@@ -10,13 +10,13 @@ import FlickerBackend
 import Kingfisher
 
 struct PhotoDetailView: View {
-    var photo: Photo
+    var photo: PersistedPhoto
     
     var body: some View {
         VStack {
             Text(photo.title)
                 .font(.title)
-            KFImage(URL(string: photo.url_m ?? ""))
+            KFImage(URL(string: photo.url_m ))
                 .resizable()
                 .scaledToFit()
         }

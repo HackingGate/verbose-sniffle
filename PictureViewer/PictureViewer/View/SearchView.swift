@@ -20,19 +20,17 @@ struct SearchView: View {
             VStack {
                 if let error = viewModel.error {
                     Text(error.localizedDescription)
-                } else if viewModel.flickrPhotosSearchResponse == nil {
+                } else if viewModel.photos == [] {
                     Text("No data")
-                } else if let flickrPhotosSearchResponse = viewModel.flickrPhotosSearchResponse {
-                    WaterfallView(photos: flickrPhotosSearchResponse.photos.photo) { photo in
+                } else {
+                    WaterfallView(photos: viewModel.photos) { photo in
                         NavigationLink(destination: PhotoDetailView(photo: photo)) {
-                            KFImage(URL(string: photo.url_m ?? ""))
+                            KFImage(URL(string: photo.url_m ))
                                 .resizable()
                                 .scaledToFit()
                                 .cornerRadius(10)
                         }
                     }
-                } else {
-                    Text("Loading...")
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
