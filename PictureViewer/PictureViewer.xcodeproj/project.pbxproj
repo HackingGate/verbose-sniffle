@@ -20,6 +20,7 @@
 		C7BAC9B12A18CB5E00F03354 /* PictureViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAC9B02A18CB5E00F03354 /* PictureViewerTests.swift */; };
 		C7BAC9BB2A18CB5E00F03354 /* PictureViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAC9BA2A18CB5E00F03354 /* PictureViewerUITests.swift */; };
 		C7BAC9BD2A18CB5E00F03354 /* PictureViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BAC9BC2A18CB5E00F03354 /* PictureViewerUITestsLaunchTests.swift */; };
+		C7C7F1E32A1DD92D0049B9FB /* FlickrBackend in Frameworks */ = {isa = PBXBuildFile; productRef = C7C7F1E22A1DD92D0049B9FB /* FlickrBackend */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C7F1E32A1DD92D0049B9FB /* FlickrBackend in Frameworks */,
 				C75E8F202A1DB77F00C20EA1 /* RealmSwift in Frameworks */,
 				C75E8F182A1D6D4200C20EA1 /* Kingfisher in Frameworks */,
 			);
@@ -198,6 +200,7 @@
 			packageProductDependencies = (
 				C75E8F172A1D6D4200C20EA1 /* Kingfisher */,
 				C75E8F1F2A1DB77F00C20EA1 /* RealmSwift */,
+				C7C7F1E22A1DD92D0049B9FB /* FlickrBackend */,
 			);
 			productName = PictureViewer;
 			productReference = C7BAC99C2A18CB5D00F03354 /* PictureViewer.app */;
@@ -671,6 +674,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C75E8F1E2A1DB77F00C20EA1 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		C7C7F1E22A1DD92D0049B9FB /* FlickrBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FlickrBackend;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
