@@ -1,3 +1,3 @@
 # FlickerBackend
 
-A description of this package.
+Flicker backend in Swift.

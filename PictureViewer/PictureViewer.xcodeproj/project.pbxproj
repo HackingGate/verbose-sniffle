@@ -56,6 +56,7 @@
 		C7BAC9B62A18CB5E00F03354 /* PictureViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BAC9BA2A18CB5E00F03354 /* PictureViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerUITests.swift; sourceTree = "<group>"; };
 		C7BAC9BC2A18CB5E00F03354 /* PictureViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7C7F1DF2A1DCAEA0049B9FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 		C7BAC9932A18CB5D00F03354 = {
 			isa = PBXGroup;
 			children = (
+				C7C7F1DF2A1DCAEA0049B9FB /* README.md */,
 				C787EDDA2A19EA6A00CF1533 /* FlickerBackend */,
 				C7BAC99E2A18CB5D00F03354 /* PictureViewer */,
 				C7BAC9AF2A18CB5E00F03354 /* PictureViewerTests */,
