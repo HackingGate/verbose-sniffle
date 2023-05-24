@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FlickerBackend
+import FlickrBackend
 import Kingfisher
 
 struct PhotoDetailView: View {

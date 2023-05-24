@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FlickerBackend
+import FlickrBackend
 
 struct WaterfallView<Content: View>: View {
     var photos: [PersistedPhoto]

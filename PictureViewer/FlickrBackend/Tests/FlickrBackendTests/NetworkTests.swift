@@ -1,5 +1,5 @@
 import XCTest
-@testable import FlickerBackend
+@testable import FlickrBackend
 
 final class NetworkTests: XCTestCase {
     func testGETPhotos() async {

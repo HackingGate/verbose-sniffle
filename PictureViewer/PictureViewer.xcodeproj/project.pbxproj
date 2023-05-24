@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C72F5EFD2A1D59E700089CAA /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72F5EFC2A1D59E700089CAA /* SearchViewModel.swift */; };
-		C75E8F132A1D5E3700C20EA1 /* FlickerBackend in Frameworks */ = {isa = PBXBuildFile; productRef = C75E8F122A1D5E3700C20EA1 /* FlickerBackend */; };
 		C75E8F152A1D692A00C20EA1 /* WaterfallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75E8F142A1D692A00C20EA1 /* WaterfallView.swift */; };
 		C75E8F182A1D6D4200C20EA1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C75E8F172A1D6D4200C20EA1 /* Kingfisher */; };
 		C75E8F1A2A1D7C5000C20EA1 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75E8F192A1D7C5000C20EA1 /* PhotoDetailView.swift */; };
@@ -45,7 +44,6 @@
 		C75E8F142A1D692A00C20EA1 /* WaterfallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallView.swift; sourceTree = "<group>"; };
 		C75E8F192A1D7C5000C20EA1 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		C75E8F212A1DB7EC00C20EA1 /* PersistedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedPhoto.swift; sourceTree = "<group>"; };
-		C787EDDA2A19EA6A00CF1533 /* FlickerBackend */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FlickerBackend; sourceTree = "<group>"; };
 		C7BAC99C2A18CB5D00F03354 /* PictureViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BAC99F2A18CB5D00F03354 /* PictureViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerApp.swift; sourceTree = "<group>"; };
 		C7BAC9A12A18CB5D00F03354 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -57,6 +55,7 @@
 		C7BAC9BA2A18CB5E00F03354 /* PictureViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerUITests.swift; sourceTree = "<group>"; };
 		C7BAC9BC2A18CB5E00F03354 /* PictureViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7C7F1DF2A1DCAEA0049B9FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C7C7F1E12A1DD2960049B9FB /* FlickrBackend */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FlickrBackend; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +65,6 @@
 			files = (
 				C75E8F202A1DB77F00C20EA1 /* RealmSwift in Frameworks */,
 				C75E8F182A1D6D4200C20EA1 /* Kingfisher in Frameworks */,
-				C75E8F132A1D5E3700C20EA1 /* FlickerBackend in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C7C7F1DF2A1DCAEA0049B9FB /* README.md */,
-				C787EDDA2A19EA6A00CF1533 /* FlickerBackend */,
+				C7C7F1E12A1DD2960049B9FB /* FlickrBackend */,
 				C7BAC99E2A18CB5D00F03354 /* PictureViewer */,
 				C7BAC9AF2A18CB5E00F03354 /* PictureViewerTests */,
 				C7BAC9B92A18CB5E00F03354 /* PictureViewerUITests */,
@@ -198,7 +196,6 @@
 			);
 			name = PictureViewer;
 			packageProductDependencies = (
-				C75E8F122A1D5E3700C20EA1 /* FlickerBackend */,
 				C75E8F172A1D6D4200C20EA1 /* Kingfisher */,
 				C75E8F1F2A1DB77F00C20EA1 /* RealmSwift */,
 			);
@@ -665,10 +662,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C75E8F122A1D5E3700C20EA1 /* FlickerBackend */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = FlickerBackend;
-		};
 		C75E8F172A1D6D4200C20EA1 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C75E8F162A1D6D4200C20EA1 /* XCRemoteSwiftPackageReference "Kingfisher" */;

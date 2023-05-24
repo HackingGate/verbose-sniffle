@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FlickerBackend
+import FlickrBackend
 import RealmSwift
 
 @MainActor
